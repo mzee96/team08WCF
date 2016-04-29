@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="EventPlanning_LINQ">
+  <DataContextMoniker Name="/EventPlanning_LINQDataContext" />
+  <nestedChildShapes>
+    <classShape Id="43d01c7b-7884-4098-afb0-c570a03dcd66" absoluteBounds="3.5, 1.125, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/EventPlanning_LINQDataContext/Admin" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f3deafb5-fb30-4df1-a391-f026dcc599e7" absoluteBounds="3.515, 1.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4c9115b1-5012-4c4b-a07c-2c6fb1a9f4e6" absoluteBounds="3.5, 3.125, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/EventPlanning_LINQDataContext/Customer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f351fb53-4f13-44c8-b902-00b16a174d2f" absoluteBounds="3.515, 3.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bfe4d9ab-349a-41bf-94a5-963bb05452e0" absoluteBounds="3.5, 5.125, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/EventPlanning_LINQDataContext/Employee" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a9519d69-9f9f-4569-bd80-6cc4fcba079c" absoluteBounds="3.515, 5.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="942482c3-c869-42f6-9d26-e7e6b7b86343" absoluteBounds="3.5, 7, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/EventPlanning_LINQDataContext/Planner" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dcac71a2-dece-4b9e-82e4-55470092e620" absoluteBounds="3.515, 7.46, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="13cced45-c5e0-4105-bc71-4d7aa41795c0" absoluteBounds="0.75, 3.25, 2, 2.9247054036458326">
+      <DataClassMoniker Name="/EventPlanning_LINQDataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0bcffe3b-aa6d-4b35-8b80-2b3027328b3d" absoluteBounds="0.765, 3.71, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(1.75 : 3.25); (1.75 : 1.72199625651042); (3.5 : 1.72199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/EventPlanning_LINQDataContext/User/User_Admin" />
+      <nodes>
+        <classShapeMoniker Id="13cced45-c5e0-4105-bc71-4d7aa41795c0" />
+        <classShapeMoniker Id="43d01c7b-7884-4098-afb0-c570a03dcd66" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 3.78449625651042); (3.5 : 3.78449625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/EventPlanning_LINQDataContext/User/User_Customer" />
+      <nodes>
+        <classShapeMoniker Id="13cced45-c5e0-4105-bc71-4d7aa41795c0" />
+        <classShapeMoniker Id="4c9115b1-5012-4c4b-a07c-2c6fb1a9f4e6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 5.64985270182292); (3.5 : 5.64985270182292)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/EventPlanning_LINQDataContext/User/User_Employee" />
+      <nodes>
+        <classShapeMoniker Id="13cced45-c5e0-4105-bc71-4d7aa41795c0" />
+        <classShapeMoniker Id="bfe4d9ab-349a-41bf-94a5-963bb05452e0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 6.17470540364583); (1.75 : 7.59699625651042); (3.5 : 7.59699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/EventPlanning_LINQDataContext/User/User_Planner" />
+      <nodes>
+        <classShapeMoniker Id="13cced45-c5e0-4105-bc71-4d7aa41795c0" />
+        <classShapeMoniker Id="942482c3-c869-42f6-9d26-e7e6b7b86343" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
