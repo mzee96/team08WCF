@@ -258,7 +258,6 @@ namespace WCFServiceBonHotels1
         /**
          * Availability - Admin
           * Used for changing user type 
-          * param username="username"
           * param type="type" - of type int
           * returns message whether successul or failed
         **/

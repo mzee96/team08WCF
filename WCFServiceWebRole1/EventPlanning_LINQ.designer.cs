@@ -22,7 +22,7 @@ namespace WCFServiceWebRole1
 	using System;
 	
 	
-	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="EventPlannerDB")]
+	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="BONHotels_DB")]
 	public partial class EventPlanning_LINQDataContext : System.Data.Linq.DataContext
 	{
 		
@@ -48,7 +48,7 @@ namespace WCFServiceWebRole1
     #endregion
 		
 		public EventPlanning_LINQDataContext() : 
-				base(global::System.Configuration.ConfigurationManager.ConnectionStrings["EventPlannerDBConnectionString"].ConnectionString, mappingSource)
+				base(global::System.Configuration.ConfigurationManager.ConnectionStrings["BONHotels_DBConnectionString"].ConnectionString, mappingSource)
 		{
 			OnCreated();
 		}
